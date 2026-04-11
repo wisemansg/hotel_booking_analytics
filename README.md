@@ -146,3 +146,131 @@ This dashboard enables:
 
 👉 [View Dashboard](https://app.powerbi.com/view?r=EXAMPLE_DUMMY_LINK)
 
+---
+
+# 📊 Web Marketing Performance Dashboard
+
+## 🔍 Overview
+The **Web Marketing Performance Dashboard** is a Power BI solution designed to evaluate digital marketing effectiveness and website engagement.
+
+It provides insights into:
+- Traffic acquisition channels  
+- User engagement & bounce behavior  
+- Page performance  
+- Device & geographic trends  
+
+👥 **Audience**: Marketing leaders, analysts, executives, and BI teams  
+
+## 🎯 Business Objectives
+
+- Understand traffic sources and campaign effectiveness  
+- Evaluate user engagement and bounce rates  
+- Identify high-performing pages and regions  
+- Improve ROI and reduce inefficient marketing spend  
+
+## 📂 Data Sources
+
+- Google Analytics (web traffic & behavior)  
+- Campaign attribution data  
+- Device & geographic metadata  
+- CSV / flat files  
+
+## 🛠️ Tools & Technologies
+
+- **Power BI Desktop** (Visualization)  
+- **DAX** (Metrics & calculations)  
+- **Power Query (M)** (Data transformation)  
+- **Excel / CSV** (Data storage)  
+
+## 🖼️ Dashboard Preview
+
+![Web Marketing Dashboard](https://raw.githubusercontent.com/wisemansg/powerbi/main/assets/Web%20Marketing%20%20(1).png)
+
+## 📊 Key Metrics
+
+| Metric | Value |
+|---|---|
+| Total Sessions | 418K |
+| Total Exits | 139K |
+| Total Bounces | 90K |
+| Avg Time on Page | 98.49 sec |
+| Unique Pageviews | 325K |
+| Avg Page Load Time | 54.39 sec |
+| Latest Year Sessions | 189K |
+
+## 📈 Insights
+
+### Traffic Trends
+- Steady session growth (Jan–Aug)  
+- Engagement improving despite rising traffic  
+
+### Device Performance
+| Device | Sessions | Bounces |
+|---|---:|---:|
+| Desktop | 222K | 55K |
+| Mobile | 113K | 31K |
+| Tablet | 12K | 2.5K |
+
+**Insight:**  
+- Desktop = highest engagement  
+- Mobile = higher bounce → needs UX optimization  
+- Tablet = low impact  
+
+### 📄 Top Pages (by Engagement)
+- Page Title 496  
+- Page Title 1827  
+- Page Title 1788  
+- Page Title 460  
+- Page Title 1783  
+
+**Insight:** Traffic is concentrated → strong candidates for SEO & conversion optimization  
+
+### 🌍 Top Regions
+1. United States  
+2. India  
+3. France  
+4. United Kingdom  
+5. Switzerland  
+
+**Insight:** U.S. dominates → high ROI market  
+
+## 🧠 Business Insights
+
+- Strong traffic growth with improving engagement  
+- Desktop remains primary conversion channel  
+- Mobile experience needs optimization  
+- High-performing pages drive majority of value  
+- Geographic concentration highlights expansion opportunities  
+
+## 🚀 Recommendations
+
+- Optimize **mobile UX & load time**  
+- Scale high-performing content (SEO focus)  
+- Invest more in **top regions (U.S. & similar markets)**  
+- Reallocate budget to high-performing channels  
+- Integrate cost data for **CPA / ROAS analysis**  
+
+## ⚠️ Limitations
+
+- Last-click attribution model  
+- Cookie tracking may undercount users  
+- No cost data → limited ROI analysis  
+- Geo data depends on IP accuracy  
+
+## 🔮 Future Enhancements
+
+- Multi-touch attribution  
+- CRM integration (lead tracking)  
+- Automated Google Analytics API pipeline  
+- Predictive analytics (ML forecasting)  
+- ROI metrics (CPA, ROAS)  
+
+## ✅ Conclusion
+
+This dashboard enables:
+- Clear visibility into marketing performance  
+- Data-driven campaign optimization  
+- Better allocation of marketing resources  
+
+It supports faster, smarter decision-making across digital marketing operations.
+
