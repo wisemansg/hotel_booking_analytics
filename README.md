@@ -1,276 +1,59 @@
-# POWER BI
+# 🏨 Hotel Analytics Dashboard 
 
-# 📊 Sales Report Dashboard
+## 📖 1. Project Overview
+This project transforms raw, inconsistent hotel booking data into an interactive **Streamlit web application** hosted directly within **Snowflake**. By leveraging a structured data pipeline, the dashboard provides stakeholders with real-time insights into revenue, booking behaviors, and geographic performance.
 
-This dashboard analyzes company sales performance in **2021**. It transforms raw sales data into interactive visuals (charts, tables, and maps) to help managers and stakeholders quickly understand:
+## ⚙️ 2. Technical Architecture
+The data pipeline follows a structured "Medallion" workflow:
+1. **Raw Data:** Initial ingestion of unprocessed files into Snowflake.
+2. **Cleaned Data:** Scrubbing for errors, handling nulls, and formatting dates.
+3. **Business Ready:** Final "Approved" datasets prepared for analysis.
+4. **Streamlit UI:** The visualization layer where data is transformed into interactive charts using Python.
 
-- Sales trends  
-- Category performance  
-- Geographic distribution  
+![Architecture Diagram](https://raw.githubusercontent.com/wisemansg/hotel_booking_analytics/main/assets/ARCHITECTURE%20DIAGRAM.jpeg)
 
-The report focuses on product categories like **novelty items, supermarket goods, computers, gifts, and corporate supplies**.
+## ⚡ 3. Live Interaction Features
+This dashboard is a fully interactive tool designed for data exploration:
+*   **Live Data Sync:** Hosted on Snowflake, ensuring the dashboard reflects the most current data.
+*   **Dynamic Filtering:** Users can drill down into specific dates, cities, or room types.
+*   **Real-Time KPI Updates:** Metrics recalculate instantly based on user input.
 
-## 🎯 Project Objective
+## 📊 4. Full Dashboard & Results
+The dashboard provides a high-level executive view of the hotel's performance.
 
-Provide business intelligence insights to support decisions regarding:
+![Full Dashboard](https://raw.githubusercontent.com/wisemansg/hotel_booking_analytics/main/assets/FULL%20DASHBOARD.png)
 
-- Product focus  
-- Market expansion  
-- Seasonal strategies  
-- Overall sales performance  
-
-The dashboard answers key questions about sales trends, category contributions, monthly fluctuations, and regional performance.
-
-## 📂 Dataset Used
-
-The dataset contains **12 months of sales records for 2021**, including:
-
-- Date of sale (month/year)  
-- Product category  
-- Sales amount  
-- Quantity sold  
-- Geographic location (state/province)  
-- Year  
-
-### ✅ Download Dataset  
-👉 [Download CSV](https://raw.githubusercontent.com/wisemansg/powerbi/main/assets/(PROJECT1)%20CustomerMaster.csv)
-
-## 📊 Questions (KPIs)
-
-- Total Sales  
-- Total Quantity Sold  
-- Year-over-Year (YoY) Change  
-- Sales YTD (Year-to-Date)  
-- Sales by Category  
-- Sales by Month  
-- Sales by Province/State  
-- Quantity Trends  
-
-## ⚙️ Process
-
-**Data Preparation**  
-- Cleaned data in Power BI  
-- Standardized categories  
-- Handled missing values  
-
-**Data Modeling**  
-- Created calculated columns for YTD, YoY, and cumulative metrics  
-
-**DAX Metrics**  
-- Total Sales  
-- YoY % Change  
-- Total Quantity  
-- Category contribution  
-
-**Analysis**  
-- Monthly trends  
-- Category comparison  
-- Regional performance  
-
-**Visualization**  
-- Interactive dashboard with slicers  
-
-## 🖼️ Dashboard Overview
-
-![Sales Report Dashboard](https://raw.githubusercontent.com/wisemansg/powerbi/main/assets/Sales%20Report%20(1).png)
-
-## 📅 Year Filters
-
-- Select years (2018–2021)  
-- Currently filtered to **2021**  
-
-## 📊 Sales by Category
-
-- **Novelty Shop**: ~$16M (~70%)  
-- Supermarket: ~$2M  
-- Computer: ~$2M  
-- Gift: ~$2M  
-- Corporate: ~$0  
-
-💡 **Insight**: Heavy reliance on novelty items → diversification recommended.
-
-## 📈 Monthly Sales Breakdown
-
-| Month     | Sales   | YoY Change | YTD Sales |
-|----------|--------|-----------|----------|
-| January   | $4.44M | +3.1%  | $4.44M |
-| February  | $4.24M | -4.3%  | $8.68M |
-| March     | $4.58M | -8.2%  | $13.17M |
-| April     | $4.59M | +11.4% | $17.76M |
-| May       | $4.59M | -100%  | $22.36M |
-| June      | $4.59M | -100%  | $22.36M |
-| July–Nov  | $0     | -100%  | $22.36M |
-| December  | $2.74M | -100%  | $22.74M |
-
-💡 **Insight**: Strong first half, major drop in second half.
-
-## 🗺️ Sales by Region
-
-- **Top States**: California, Texas, New York  
-- Lower performance: Midwest & Western regions  
-
-💡 **Insight**: Opportunity for regional expansion.
-
-## 📉 Quantity Trend
-
-- High in January (~220K units)  
-- Declines mid-year  
-- Near zero in H2  
-
-💡 **Insight**: Confirms sharp drop in demand or supply.
-
-## 🔍 Key Insights
-
-- Strong Q1 & Q2, weak H2 (-58% YoY)  
-- Novelty category dominates (~70%)  
-- Untapped regional markets  
-- Possible operational/supply issues mid-year  
-
-## ✅ Final Conclusion
-
-This dashboard enables:
-
-- Clear performance tracking  
-- Identification of top categories  
-- Early detection of sales decline  
-- Better strategic decision-making  
-
-## 🛠️ Tools Used
-
-- Power BI  
-- Power Query  
-- DAX  
-- Excel / CSV  
-
-## 🔗 Live Dashboard
-
-👉 [View Dashboard](https://app.powerbi.com/view?r=EXAMPLE_DUMMY_LINK)
-
----
-
-# 📊 Web Marketing Performance Dashboard
-
-## 🔍 Overview
-The **Web Marketing Performance Dashboard** is a Power BI solution designed to evaluate digital marketing effectiveness and website engagement.
-
-It provides insights into:
-- Traffic acquisition channels  
-- User engagement & bounce behavior  
-- Page performance  
-- Device & geographic trends  
-
-👥 **Audience**: Marketing leaders, analysts, executives, and BI teams  
-
-## 🎯 Business Objectives
-
-- Understand traffic sources and campaign effectiveness  
-- Evaluate user engagement and bounce rates  
-- Identify high-performing pages and regions  
-- Improve ROI and reduce inefficient marketing spend  
-
-## 📂 Data Sources
-
-- Google Analytics (web traffic & behavior)  
-- Campaign attribution data  
-- Device & geographic metadata  
-- CSV / flat files  
-
-## 🛠️ Tools & Technologies
-
-- **Power BI Desktop** (Visualization)  
-- **DAX** (Metrics & calculations)  
-- **Power Query (M)** (Data transformation)  
-- **Excel / CSV** (Data storage)  
-
-## 🖼️ Dashboard Preview
-
-![Web Marketing Dashboard](https://raw.githubusercontent.com/wisemansg/powerbi/main/assets/Web%20Marketing%20%20(1).png)
-
-## 📊 Key Metrics
+### Executive KPIs
 
 | Metric | Value |
-|---|---|
-| Total Sessions | 418K |
-| Total Exits | 139K |
-| Total Bounces | 90K |
-| Avg Time on Page | 98.49 sec |
-| Unique Pageviews | 325K |
-| Avg Page Load Time | 54.39 sec |
-| Latest Year Sessions | 189K |
+| :--- | :--- |
+| **Total Revenue** | 577,347 |
+| **Total Bookings** | 1,729 |
+| **Total Guests** | 5,072 |
+| **Avg. Booking Value** | 334.11 |
 
-## 📈 Insights
+### 🔗 Live Interaction
+If you have access to the Snowflake environment, you can interact with the live application here:
+👉 [Hotel Analytics Live Dashboard](https://app.snowflake.com/streamlit/sweden-central.azure/xf09284/#/apps/3ux4b4y5obk6caso6633)
 
-### Traffic Trends
-- Steady session growth (Jan–Aug)  
-- Engagement improving despite rising traffic  
+## 🔍 5. Deep Dive Analysis
 
-### Device Performance
-| Device | Sessions | Bounces |
-|---|---:|---:|
-| Desktop | 222K | 55K |
-| Mobile | 113K | 31K |
-| Tablet | 12K | 2.5K |
+### A. Revenue & Booking Trends
+![Monthly Revenue Trend](https://raw.githubusercontent.com/wisemansg/hotel_booking_analytics/main/assets/MONTHLY%20REVENUE%20TREND.png)
 
-**Insight:**  
-- Desktop = highest engagement  
-- Mobile = higher bounce → needs UX optimization  
-- Tablet = low impact  
+![Monthly Bookings Trend](https://raw.githubusercontent.com/wisemansg/hotel_booking_analytics/main/assets/MONTHLY%20BOOKINGS%20TREND.png)
 
-### 📄 Top Pages (by Engagement)
-- Page Title 496  
-- Page Title 1827  
-- Page Title 1788  
-- Page Title 460  
-- Page Title 1783  
+### B. City Performance
+![City Performance Bar Chart](https://raw.githubusercontent.com/wisemansg/hotel_booking_analytics/main/assets/CITY%20PERFORMANCE%20BAR%20CHART.png)
 
-**Insight:** Traffic is concentrated → strong candidates for SEO & conversion optimization  
+### C. Booking Breakdown
+![Booking Breakdown by Room Type](https://raw.githubusercontent.com/wisemansg/hotel_booking_analytics/main/assets/BOOKING%20BREAKDOWN%20BY%20ROOM%20TYPE.png)
 
-### 🌍 Top Regions
-1. United States  
-2. India  
-3. France  
-4. United Kingdom  
-5. Switzerland  
+![Booking Breakdown by Status](https://raw.githubusercontent.com/wisemansg/hotel_booking_analytics/main/assets/BOOKING%20BREAKDOWN%20BY%20STATUS.png)
 
-**Insight:** U.S. dominates → high ROI market  
+## 🛠️ 6. Technology Stack
+* **Cloud Platform:** Snowflake
+* **Frontend/App:** Streamlit (Python)
+* **Data Manipulation:** SQL & Pandas
 
-## 🧠 Business Insights
-
-- Strong traffic growth with improving engagement  
-- Desktop remains primary conversion channel  
-- Mobile experience needs optimization  
-- High-performing pages drive majority of value  
-- Geographic concentration highlights expansion opportunities  
-
-## 🚀 Recommendations
-
-- Optimize **mobile UX & load time**  
-- Scale high-performing content (SEO focus)  
-- Invest more in **top regions (U.S. & similar markets)**  
-- Reallocate budget to high-performing channels  
-- Integrate cost data for **CPA / ROAS analysis**  
-
-## ⚠️ Limitations
-
-- Last-click attribution model  
-- Cookie tracking may undercount users  
-- No cost data → limited ROI analysis  
-- Geo data depends on IP accuracy  
-
-## 🔮 Future Enhancements
-
-- Multi-touch attribution  
-- CRM integration (lead tracking)  
-- Automated Google Analytics API pipeline  
-- Predictive analytics (ML forecasting)  
-- ROI metrics (CPA, ROAS)  
-
-## ✅ Conclusion
-
-This dashboard enables:
-- Clear visibility into marketing performance  
-- Data-driven campaign optimization  
-- Better allocation of marketing resources  
-
-It supports faster, smarter decision-making across digital marketing operations.
 
